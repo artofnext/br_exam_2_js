@@ -36,6 +36,14 @@ a {
     position: relative;
 }
 
+.nav-dot {
+    height: 10px;
+    width: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+}
+
 .centered {
     max-width: 1200px;
     width: 90%;
