@@ -18,7 +18,6 @@ ul {
     list-style: none;
     li:hover {
         text-shadow: 0 0 3px white;
-
     }
 }
 
@@ -178,6 +177,12 @@ a {
     height: 1000px;
     background-repeat: no-repeat;
     background-position: center;
+    // margin-top: 50px;
+    padding-top: 50px;
+
+    .section__line hr {
+        border: 1px solid white;
+    }
 }
 
 //Slider 2
