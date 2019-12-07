@@ -175,4 +175,21 @@ a {
     color: white;
     background-image: url(../img/news_bg.png);
     height: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+//Slider 2
+.slide2 {
+    width: 80%;
+    /* max-width: 1000px; */
+    margin: 0 auto;
+}
+
+.slide2-elem {
+    height: 520px;
+    width: 373px;
+    margin: 0 50px;
+    background-color: white;
+    color: $color-dark;
 }
