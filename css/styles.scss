@@ -68,7 +68,7 @@ a {
 .header__carousel{
     max-width: 1600px;
     margin: 0 auto;
-}
+
 
 .slide1 {
     width: 100%;
@@ -103,6 +103,7 @@ a {
 
 .slide1-title {
     font-size: 50px;
+}
 }
 
 .what {
@@ -192,4 +193,9 @@ a {
     margin: 0 50px;
     background-color: white;
     color: $color-dark;
+}
+
+.slide2-text {
+    padding: 20px;
+    height: 300px;
 }
