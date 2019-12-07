@@ -1,10 +1,28 @@
+@font-face {
+    font-family: Ghotam;
+    src: url(../fonts/gotham-medium-webfont.woff);
+    src: url(../fonts/gotham-medium-webfont.woff2);
+    font-weight: normal;
+  }
+
 body {
     background-color: red;
+    color: white;
+    font-family: Ghotam, Arial, Helvetica, sans-serif;
 
 }
 
 ul {
     list-style: none;
+    li:hover {
+        text-shadow: 0 0 3px white;
+
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .flex-spread {
