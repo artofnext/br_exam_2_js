@@ -121,6 +121,10 @@ a {
     font-size: 44px;
 }
 
+.section2__container {
+    // margin: 50px 0;
+}
+
 .frame {
     width: 630px;
     height: 470px;
@@ -129,24 +133,28 @@ a {
 .double__image {
     position: relative;
     display: inline-block;
-    width: 845px;
+    // max-width: 845px;
+    // width: 50%;
     height: 540px;
 }
 
 .blue__bg {
     background-color: lightblue;
     z-index: -1;
+    position: absolute;
+    // position: absolute;
 }
 
 .img__trade {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    
+    // right: 0;
+    // bottom: 0;
 }
 
 .section2__post {
     display: inline-block;
+    padding: 20px 150px 20px 0;
     max-width: 600px;
-    width: 600px;
+    width: 45%;
+    // top: 50%;
+    // width: 600px;
 }
