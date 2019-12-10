@@ -378,6 +378,8 @@ a {
 
 .map {
     height: 700px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 #map {
@@ -391,7 +393,6 @@ a {
 }
 
 .contact__container {
-    // border: 1px solid red;
     $height: 450px;
     position: absolute;
     height: $height;
@@ -401,10 +402,38 @@ a {
     transform: translate(-50%, 0%);
     top: -$height / 2;
     box-shadow: 0 0 50px lighten($color-dark, 50%);
-
+    
 }
 
 .footer {
     background-image: url(../img/footer_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
     height: 525px;
+}
+
+.footer__container {
+    // border: 1px solid red;
+    width: 770px;
+    padding-top: 250px;
+    // height: 10px;
+}
+
+
+
+.copyright__container {
+    text-transform: initial;
+    justify-content: flex-start;
+
+    p:nth-child(1) {
+        padding-right: 20px;
+        border-right: 1px solid white;
+    }
+    p:nth-child(2) {
+        padding-left: 20px;
+    }
+}
+
+.heart {
+    fill: white;
 }
