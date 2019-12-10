@@ -6,6 +6,7 @@
   }
 
 $color-dark: #232323;
+$dot-size: 7px;
 
 body {
     // background-color: red;
@@ -19,6 +20,15 @@ ul {
     li:hover {
         text-shadow: 0 0 3px white;
     }
+}
+
+.social__item  a:hover img,.logo__container a:hover img {
+    -webkit-filter: drop-shadow(0 0 5px white);
+    filter: drop-shadow(0 0 2px white);
+}
+
+.social__item {
+    margin: 10px;
 }
 
 a {
@@ -36,12 +46,28 @@ a {
     position: relative;
 }
 
-.nav-dot {
-    height: 10px;
-    width: 10px;
+.slick-dots li button:before {
+    content: '' !important;
+    height: $dot-size  !important;
+    width: $dot-size  !important;
+    // color: transparent;
+}
+
+.nav-dot, .slick-dots li button:before {
+    height: $dot-size;
+    width: $dot-size;
     border: 1px solid white;
     border-radius: 50%;
     display: inline-block;
+    opacity: 1 !important;
+}
+
+.nav-dot {
+    margin: 3px $dot-size + 3px 2px 0;
+}
+
+.scroll_link:hover .nav-dot {
+    background-color: white;
 }
 
 .centered {
@@ -56,12 +82,9 @@ a {
 
 .nav__container {
     flex-grow: 1;
-    margin: 0 100px;
+    margin: 0 50px;
 }
 
-.social__item {
-    margin: 20px;
-}
 
 //Slick styles
 
@@ -70,12 +93,12 @@ a {
     z-index: 10;
     left: 50%;
     transform: translate(-50%, 0%);
+    margin-top: 40px;
 }
 
 .header__carousel{
     max-width: 1600px;
     margin: 0 auto;
-
 
 .slide1 {
     width: 100%;
@@ -91,8 +114,18 @@ a {
     position: absolute;
     display: flex !important; 
     flex-direction: column;
+    width: initial;
     top: 50%;
-    left: 0;
+    right: 40px;
+
+    & li {
+        margin: 15px 0;
+    }
+    
+}
+
+.slick-active button::before {
+    background-color: white;
 }
 
 .slide1-elem {
@@ -110,6 +143,7 @@ a {
 
 .slide1-title {
     font-size: 50px;
+    letter-spacing: 5px;
 }
 }
 
