@@ -147,6 +147,13 @@ a {
 }
 }
 
+.scroller {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    left: 48.5%;
+}
+
 .what {
     color: $color-dark;
 }
