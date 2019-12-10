@@ -402,6 +402,7 @@ a {
     transform: translate(-50%, 0%);
     top: -$height / 2;
     box-shadow: 0 0 50px lighten($color-dark, 50%);
+    z-index: 20;
     
 }
 
