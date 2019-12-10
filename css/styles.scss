@@ -223,6 +223,31 @@ a {
     // width: 600px;
 }
 
+.pre__post {
+    font-size: 22px;
+}
+
+.post__title {
+    font-size: 44px;
+    margin-top: 0;
+}
+
+.post__text {
+    font-size: 18;
+    text-transform: initial;
+}
+
+.post_tag {
+    text-transform: initial;
+    font-style: italic;
+    
+}
+
+.geo__marker {
+    height: 15px;
+    fill: $color-dark;
+}
+
 .news {
     color: white;
     background-image: url(../img/news_bg.png);
