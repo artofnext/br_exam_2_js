@@ -11,8 +11,20 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // show the scale bar on the lower left corner
 L.control.scale().addTo(map);
 
+// Custom marker
+var customIcon = L.icon({
+  iconUrl: '../img/insta_ico.png',
+  shadowUrl: '../img/insta_ico.png',
+
+  iconSize:     [40, 60], // size of the icon
+  shadowSize:   [40, 40], // size of the shadow
+  iconAnchor:   [20, 59], // point of the icon which will correspond to marker's location
+  shadowAnchor: [20, 39],  // the same for the shadow
+  popupAnchor:  [-3, -60] // point from which the popup should open relative to the iconAnchor
+});
+
 // show a marker on the map
-// L.marker({lon: 31.1, lat: 48.3}).bindPopup('The center of the world').addTo(map);
+L.marker([28.437470, 49.218677], {icon: customIcon}).bindPopup('Custom marker').addTo(map);
 
 // get user geolocation
 var options = {
