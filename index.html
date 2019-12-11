@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
     <script src="https://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -47,7 +49,7 @@
                         <li class="nav__item"><a class="scroll_link" href="#news">
                                 <div class="nav-dot"></div>NEWS
                             </a></li>
-                        <li class="nav__item"><a class="scroll_link" href="#about">
+                        <li class="nav__item"><a class="scroll_link" href="#contact">
                                 <div class="nav-dot"></div>CONTACT
                             </a></li>
                     </ul>
@@ -270,15 +272,15 @@
                 </div>
                 <div class="contact__content flex-spread">
                     <div class="address">
-                        <p>  91 Nolan Extensions Suite 670</p>
-                        <p>  +001 356-868-2454</p>
-                        <p>  gahuy93@gmail.com</p>
-                        <p>  From 07:05AM to 19:30PM</p>
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>  91 Nolan Extensions Suite 670</p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i>  +001 356-868-2454</p>
+                        <p><i class="fa fa-inbox" aria-hidden="true"></i>  gahuy93@gmail.com</p>
+                        <p><i class="fa fa-clock-o" aria-hidden="true"></i>  From 07:05AM to 19:30PM</p>
                     </div>
                     <div class="form__container">
                         <form class="contact-form">
-                            <input type="text" name="name"><br>
-                            <input type="email" name="email"><br>
+                            <input type="text" name="name" placeholder="Name" required><br>
+                            <input type="email" name="email" placeholder="Email" required><br>
                             <button class="button" type="submit">submit</button>
                         </form>
                     </div>
